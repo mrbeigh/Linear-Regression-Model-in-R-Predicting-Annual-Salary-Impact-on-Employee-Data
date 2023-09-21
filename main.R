@@ -37,9 +37,6 @@ t.test(mydata$Annual.Salary, mu = 500000, alternative = "less")
 t.test(mydata$Age,mu = 20, alternative = "greater")
 t.test(mydata$Bonus.., mu = 15, alternative = "two.sided")
 
-
-
-
 #############pearson correlation test
 
 
@@ -65,9 +62,6 @@ r<-ggplot(mydata, aes(x= Bonus.., y=Annual.Salary, color=Bonus..))+
 ggplotly(r)
 res3 <- cor.test(mydata$Age, mydata$Bonus.., method='pearson')
 res3
-
-
-
 
 
 ################################Independent Sample T test
@@ -133,10 +127,6 @@ res
 #Independent sample T test
 result<- t.test(Bonus..~Gender, data=mydata, var.equal=T, alternative= "two.sided")
 result
-
-
-
-
 
 
 ########################### One Way ANOVA test
